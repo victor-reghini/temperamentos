@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Temperamentos Humano - Escala de Gradiente</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-color: #34495e;
+            --border-color: #cbd5e1;
+            --left-brand: #3498db;
+            --right-brand: #9b59b6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 12px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+        }
+
+        .instructions {
+            background-color: #eef7fa;
+            border-left: 5px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .instructions p {
+            margin-bottom: 10px;
+        }
+
+        .instructions ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .instructions li {
+            margin-bottom: 6px;
+        }
+
+        .part-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 30px 0 20px 0;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .question-block {
+            margin-bottom: 24px;
+            padding: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            background-color: #fdfdfd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 14px;
+            font-size: 1.05rem;
+            display: block;
+        }
+
+        .options-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .option-box {
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border-top: 4px solid #cbd5e1;
+        }
+
+        .option-box.left-box { border-top-color: var(--left-brand); }
+        .option-box.right-box { border-top-color: var(--right-brand); }
+
+        .option-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #7f8c8d;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .gradient-scale-container {
+            background: #fcfcfc;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px dashed #cbd5e1;
+        }
+
+        .scale-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #7f8c8d;
+            text-align: center;
+        }
+
+        .gradient-scale {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .gradient-scale::before {
+            content: '';
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            top: 15px;
+            height: 4px;
+            background: linear-gradient(to right, var(--left-brand), var(--right-brand));
+            z-index: 1;
+        }
+
+        .scale-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+        }
+
+        .scale-point input[type="radio"] {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-bottom: 6px;
+            accent-color: var(--accent-color);
+        }
+
+        .scale-label {
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #64748b;
+            max-width: 65px;
+            word-wrap: break-word;
+            line-height: 1.1;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(39, 174, 96, 0.15);
+        }
+
+        button:hover, button:active {
+            background-color: #219653;
+        }
+
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-success {
+            background-color: #e8f8f5;
+            border: 2px solid #2cc185;
+            color: #117a65;
+        }
+
+        .result-error {
+            background-color: #fceaeb;
+            border: 2px solid #e74c3c;
+            color: #c0392b;
+        }
+
+        .result-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .result-details {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 12px;
+            border-radius: 6px;
+            text-align: left;
+            display: block;
+        }
+
+        /* --- OTIMIZAÇÃO E RESPONSIVIDADE MOBILE --- */
+        @media (max-width: 640px) {
+            body {
+                padding: 6px;
+            }
+
+            .container {
+                padding: 14px;
+                border-radius: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .options-display {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .option-box {
+                border-top: none;
+                border-left: 4px solid #cbd5e1;
+            }
+            .option-box.left-box { border-left-color: var(--left-brand); }
+            .option-box.right-box { border-left-color: var(--right-brand); }
+
+            .scale-label {
+                font-size: 0.6rem;
+                max-width: 50px;
+            }
+            
+            .scale-point input[type="radio"] {
+                width: 22px;
+                height: 22px;
+            }
+            
+            .question-block {
+                padding: 12px;
+                margin-bottom: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Teste de Temperamentos</h1>
+    </header>
+
+    <div class="instructions">
+        <p><strong>INSTRUÇÕES GERAIS E DIRETRIZES DO TESTE:</strong></p>
+        <ul>
+            <li><strong>Instinto Puro:</strong> Responda sinceramente de acordo com seu instinto, não com o que você gostaria de ser ou o que acredita ser certo.</li>
+            <li><strong>Filtro Social Zero:</strong> Responda de acordo com você, não com a opinião de terceiros. Lembre-se de que o temperamento não requer esforço, é o que é natural para você, aquilo que está no fundo, longe de todos os filtros que usamos para viver em sociedade.</li>
+            <li><strong>Momento Ideal:</strong> Reserve um tempo tranquilo para responder às perguntas.</li>
+            <li><strong>Facilidade vs. Aprendizado:</strong> Não responda com base no que aprendeu em cursos, mas sim no que você sentiria mais facilidade orgânica em fazer.</li>
+            <li><strong>Axioma da Unicidade:</strong> Nesta abordagem, acreditamos que cada pessoa possui apenas um único temperamento essencial. Mesmo que seu resultado não tenha grande contraste quantitativo, sua essência pertence a uma matriz específica.</li>
+            <li><strong>Fundamento Teórico:</strong> As perguntas são baseadas no conhecimento milenar das quatro características universais da matéria (quente, frio, úmido e seco).</li>
+            <li><strong>Igualdade de Valor:</strong> Não existe temperamento melhor ou pior, portanto, evite manipular suas respostas.</li>
+        </ul>
+        <p><strong>COMO FUNCIONA A ESCALA DE GRADIENTE:</strong></p>
+        <p>Em vez de ser forçado a escolher rigidamente entre um ou outro, expressa sua afinidade em 5 níveis:</p>
+        <ul>
+            <li><strong>Nível 1 (Total Esquerda):</strong> Sou totalmente descrito pela Opção da Esquerda.</li>
+            <li><strong>Nível 2 (Mais Esquerda):</strong> Me inclino mais para a Opção da Esquerda.</li>
+            <li><strong>Nível 3 (Ambos / Neutro):</strong> Sinto um equilíbrio perfeito entre as duas opções (Meio a Meio).</li>
+            <li><strong>Nível 4 (Mais Direita):</strong> Me inclino mais para a Opção da Direita.</li>
+            <li><strong>Nível 5 (Total Direita):</strong> Sou totalmente descrito pela Opção da Direita.</li>
+        </ul>
+        <p><a href="/variacoes/classico.html">ir para modelo binário clássico</a> | <a href="/">voltar para TemperamentAxes</a></p>
+    </div>
+
+    <form id="quizForm">
+        <div id="quiz-content">
+            </div>
+        <button type="submit">Calcular Meu Temperamento</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    const quizData = {
+        parte1: [
+            { id: 1, options: { A: "Quando você está em um ambiente novo, você tende a explorá-lo completamente.", B: "Tende a ser receoso em novos ambientes." } },
+            { id: 2, options: { A: "Quando alguém lhe ofende de forma inesperada, você já tem uma resposta.", B: "Não reage rapidamente às ofensas inesperadas." } },
+            { id: 3, options: { A: "Para você, é muito fácil emitir sua opinião em meio a um grupo de \"semi-conhecidos\".", B: "Não consegue elaborar uma opinião sem se sentir muito seguro antes." } },
+            { id: 4, options: { A: "Para você, a comunicação e a oportunidade de se posicionar são imprescindíveis.", B: "Você suporta por um bom tempo quando não pode se posicionar." } },
+            { id: 5, options: { A: "É muito fácil tomar uma atitude em ações em grupo.", B: "Possui dificuldades em tomar decisões em meio a um grupo." } },
+            { id: 6, options: { A: "Você é o primeiro a se manifestar em dinâmicas de grupo.", B: "Você espera que outro dê o primeiro passo em dinâmicas de grupo." } },
+            { id: 7, options: { A: "Você se sente desconfortável vivendo apenas o óbvio e o previsível.", B: "Para você, uma vida previsível e estável é mais confortável." } },
+            { id: 8, options: { A: "Você possui um tom de voz elevado.", B: "Seu tom de voz é mais manso/vacilante/baixo." } },
+            { id: 9, options: { A: "Você precisa se expressar constantemente.", B: "Se expressar constantemente lhe cansa muito." } },
+            { id: 10, options: { A: "É muito difícil guardar para si quando não gosta de algo; logo fala.", B: "Não tem certeza de como se expressar de imediato se não gostar de algo." } },
+            { id: 11, options: { A: "Não tem problema nenhum em ter assunto com as pessoas.", B: "Tem dificuldade em ter assunto com as pessoas." } },
+            { id: 12, options: { A: "É considerado uma pessoa agitada.", B: "Te veem como calmo ou lento." } },
+            { id: 13, options: { A: "Quer resolver tudo para ontem e agita os que o cercam com sua agitação.", B: "Tem paciência para resolver ou, se está ansioso, não agita os outros." } },
+            { id: 14, options: { A: "Sente que faz muito esforço para não ser precipitado.", B: "Sente que faz muito esforço para tomar decisões mais rápidas, pensando menos." } },
+            { id: 15, options: { A: "Tende a tirar conclusões rápidas sem pensar muito", B: "Tende a pensar demais para enfim chegar a uma conclusão." } },
+            { id: 16, options: { A: "Sua presença não passa despercebida.", B: "Sua presença é naturalmente mais contida." } },
+            { id: 17, options: { A: "Por você, a vida seria aventura constante e imprevisível.", B: "Por você, a vida seria previsível e totalmente segura sem desafios ou mudanças repentinas." } },
+            { id: 18, options: { A: "Você tem muita facilidade em lidar com coisas, pessoas e situações", B: "Você se sente mais confortável dentro de si, com seus pensamentos e emoções." } },
+            { id: 19, options: { A: "Novidades e desafios constantes renovam seu ânimo.", B: "Novidades e desafios constantes lhe deixam ansioso ou cansado." } }
+        ],
+        parte2: [
+            { id: 1, options: { A: "Você tem uma visão muito flexível sobre a vida.", B: "Para você, a vida tem certos e errados muito marcados." } },
+            { id: 2, options: { A: "Você se adapta com muita facilidade a novas coisas, pessoas e situações.", B: "Você possui certa dificuldade com novidades e mudanças." } },
+            { id: 3, options: { A: "Você se relaciona facilmente com todos os tipos de pessoas, inclusive as que são muito diferentes de você, sem esforço algum.", B: "Os relacionamentos costumam ser mais forçosos e espinhosos com pessoas que não pensam igual a você em assuntos que lhe são muito importantes." } },
+            { id: 4, options: { A: "As emoções lhe são muito fortes no momento dos acontecimentos, porém, não duram muito.", B: "As emoções lhe afetam por um período prolongado, precisa se esforçar para superar." } },
+            { id: 5, options: { A: "Quando se lembra de coisas do passado, pode ou não se lembrar com detalhes, mas não sente nada. A lembrança é só uma lembrança.", B: "Quando se lembra de coisas do passado, a emoção é revivida intensamente, parece que aconteceu ontem ou que ainda está acontecendo." } },
+            { id: 6, options: { A: "Quando toma uma decisão, leva muito em conta como aquilo vai afetar seu emocional e o emocional das outras pessoas, você prioriza a harmonia.", B: "Para você, uma decisão deve ser tomada com base na verdade, não importando o que você ou os outros vão sentir." } },
+            { id: 7, options: { A: "Você naturally consegue flexibilizar suas decisões.", B: "Você é teimoso em suas decisões, sofre ao precisar flexibilizar." } },
+            { id: 8, options: { A: "Você tende a se sentir atraído por aquilo que dá prazer ao seu físico.", B: "Você tende a se atrair por ideais complexos e ideias profundas." } },
+            { id: 9, options: { A: "Quando chega em um ambiente com estímulos emocionais (uma festa, por exemplo), você se sente facilmente envolvido, comovido e atraído.", B: "Quando chega em uma festa, você cria uma certa barreira/resistência ou julgamento." } },
+            { id: 10, options: { A: "Quando combina algo, compreende facilmente quando há uma mudança.", B: "Quando combina algo, não compreende tão fácil quando algo muda e demora a aceitar." } },
+            { id: 11, options: { A: "Quando opinam de forma oposta à sua, automaticamente, sem sofrimento, você entende que é natural da vida e tudo continua normal.", B: "Quando opinam de forma oposta à sua, seu interior se perturba, é difícil aceitar e, dependendo, você não consegue agir normalmente com a pessoa." } },
+            { id: 12, options: { A: "A vida muda, é assim mesmo e está tudo bem!", B: "A vida muda e isso me faz sentir que não tenho controle!" } },
+            { id: 13, options: { A: "A paz interior é tão importante para mim que prefiro me abster de contendas.", B: "Minha paz interior não pode sobrepor a verdade. Se tenho paz com as pessoas por meio da negação do que é certo para mim, não tenho paz!" } }
+        ]
+    };
+
+    function shuffle(array) {
+        let currentIndex = array.length, randomIndex;
+        while (currentIndex != 0) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
+    }
+
+    function renderQuiz() {
+        const container = document.getElementById('quiz-content');
+        container.innerHTML = '';
+
+        // --- PARTE 1 ---
+        const h1 = document.createElement('div');
+        h1.className = 'part-title';
+        h1.innerText = 'TESTE PARTE 1 (Quente ou Frio)';
+        container.appendChild(h1);
+
+        let p1Shuffled = shuffle([...quizData.parte1]);
+        p1Shuffled.forEach((question, index) => {
+            container.appendChild(createGradientQuestionElement(question, index + 1, 'p1'));
+        });
+
+        // --- PARTE 2 ---
+        const h2 = document.createElement('div');
+        h2.className = 'part-title';
+        h2.innerText = 'TESTE PARTE 2 (Úmido ou Seco)';
+        container.appendChild(h2);
+
+        let p2Shuffled = shuffle([...quizData.parte2]);
+        p2Shuffled.forEach((question, index) => {
+            container.appendChild(createGradientQuestionElement(question, index + 1, 'p2'));
+        });
+    }
+
+    function createGradientQuestionElement(question, visualIndex, blockPrefix) {
+        const block = document.createElement('div');
+        block.className = 'question-block';
+
+        const title = document.createElement('span');
+        title.className = 'question-number';
+        title.innerText = `Questão ${visualIndex}`;
+        block.appendChild(title);
+
+        const isLeftA = Math.random() < 0.5;
+        const leftType = isLeftA ? 'A' : 'B';
+        const rightType = isLeftA ? 'B' : 'A';
+
+        const leftText = question.options[leftType];
+        const rightText = question.options[rightType];
+
+        const optionsDisplay = document.createElement('div');
+        optionsDisplay.className = 'options-display';
+        optionsDisplay.innerHTML = `
+            <div class="option-box left-box"><strong>Opção da Esquerda</strong>${leftText}</div>
+            <div class="option-box right-box"><strong>Opção da Direita</strong>${rightText}</div>
+        `;
+        block.appendChild(optionsDisplay);
+
+        const scaleContainer = document.createElement('div');
+        scaleContainer.className = 'gradient-scale-container';
+        
+        const scaleTitle = document.createElement('div');
+        scaleTitle.className = 'scale-title';
+        scaleTitle.innerText = "Selecione o seu nível de afinidade:";
+        scaleContainer.appendChild(scaleTitle);
+
+        const scaleElement = document.createElement('div');
+        scaleElement.className = 'gradient-scale';
+
+        const labels = ['Total Esquerda', 'Mais Esquerda', 'Ambos / Neutro', 'Mais Direita', 'Total Direita'];
+        for (let i = 1; i <= 5; i++) {
+            const point = document.createElement('label');
+            point.className = 'scale-point';
+
+            const radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.name = `${blockPrefix}_q${question.id}`;
+            radio.value = i;
+            radio.required = true;
+            
+            radio.setAttribute('data-left-type', leftType);
+            radio.setAttribute('data-right-type', rightType);
+
+            const textLabel = document.createElement('span');
+            textLabel.className = 'scale-label';
+            textLabel.innerText = labels[i-1];
+
+            point.appendChild(radio);
+            point.appendChild(textLabel);
+            scaleElement.appendChild(point);
+        }
+
+        scaleContainer.appendChild(scaleElement);
+        block.appendChild(scaleContainer);
+
+        return block;
+    }
+
+    document.getElementById('quizForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        let p1A = 0, p1B = 0;
+        let p2A = 0, p2B = 0;
+
+        const checkedRadios = this.querySelectorAll('input[type="radio"]:checked');
+
+        checkedRadios.forEach(radio => {
+            const value = parseInt(radio.value); 
+            const leftType = radio.getAttribute('data-left-type');
+            const rightType = radio.getAttribute('data-right-type');
+            const isP1 = radio.name.startsWith('p1_');
+
+            let weightA = 0;
+            let weightB = 0;
+
+            if (value === 1) {
+                if (leftType === 'A') weightA = 1.0; else weightB = 1.0;
+            } else if (value === 2) {
+                if (leftType === 'A') { weightA = 0.75; weightB = 0.25; } else { weightB = 0.75; weightA = 0.25; }
+            } else if (value === 3) {
+                weightA = 0.50;
+                weightB = 0.50;
+            } else if (value === 4) {
+                if (rightType === 'A') { weightA = 0.75; weightB = 0.25; } else { weightB = 0.75; weightA = 0.25; }
+            } else if (value === 5) {
+                if (rightType === 'A') weightA = 1.0; else weightB = 1.0;
+            }
+
+            if (isP1) {
+                p1A += weightA; p1B += weightB;
+            } else {
+                p2A += weightA; p2B += weightB;
+            }
+        });
+
+        const finalP1A = Math.round(p1A * 100) / 100;
+        const finalP1B = Math.round(p1B * 100) / 100;
+        const finalP2A = Math.round(p2A * 100) / 100;
+        const finalP2B = Math.round(p2B * 100) / 100;
+
+        let resultadoFinal = "";
+        let errorMsg = "";
+
+        if (finalP1A === finalP1B || finalP2A === finalP2B) {
+            errorMsg = "O teste resultou em um equilíbrio absoluto de forças. Como a metodologia determina que cada indivíduo possui um temperamento dominante básico, pedimos que reavalie ligeiramente algumas questões em que escolheu a opção central 'Ambos / Neutro' para inclinar o vetor em direção ao seu instinto real.";
+        } else {
+            if (finalP1A > finalP1B && finalP2A > finalP2B) resultadoFinal = "Sanguíneo";
+            else if (finalP1A > finalP1B && finalP2B > finalP2A) resultadoFinal = "Colérico";
+            else if (finalP1B > finalP1A && finalP2A > finalP2B) resultadoFinal = "Fleumático";
+            else if (finalP1B > finalP1A && finalP2B > finalP2A) resultadoFinal = "Melancólico";
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+
+        if (errorMsg) {
+            resultDiv.className = 'result-error';
+            resultDiv.innerHTML = `<p>${errorMsg}</p>`;
+        } else {
+            resultDiv.className = 'result-success';
+            resultDiv.innerHTML = `
+                <div class="result-title">Seu Temperamento é: ${resultadoFinal}</div>
+                <div class="result-details">
+                    <p><strong>Balanço Quantitativo dos Pesos:</strong></p>
+                    <p>• <strong>Parte 1 (Quente vs Frio):</strong> Vetor Quente (A): ${finalP1A.toFixed(2)} pts | Vetor Frio (B): ${finalP1B.toFixed(2)} pts -> <strong>${finalP1A > finalP1B ? 'Predomínio Quente' : 'Predomínio Frio'}</strong></p>
+                    <p>• <strong>Parte 2 (Úmido vs Seco):</strong> Vetor Úmido (A): ${finalP2A.toFixed(2)} pts | Vetor Seco (B): ${finalP2B.toFixed(2)} pts -> <strong>${finalP2A > finalP2B ? 'Predomínio Úmido' : 'Predomínio Seco'}</strong></p>
+                </div>
+            `;
+        }
+
+        resultDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    window.onload = renderQuiz;
+</script>
+
+</body>
+</html>

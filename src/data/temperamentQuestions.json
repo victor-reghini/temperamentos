@@ -1,0 +1,2882 @@
+[
+  {
+    "id": 1,
+    "text": "Assumo a frente de situações críticas no instante em que percebo hesitação no grupo.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 2,
+    "text": "Reajo a boas notícias com entusiasmo imediato e visível para todos ao redor.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 3,
+    "text": "Analiso todas as variáveis e riscos possíveis antes de emitir uma opinião definitiva.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 4,
+    "text": "Mantenho a calma e o tom de voz estável mesmo quando todos ao redor estão em pânico.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão e fadiga, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 5,
+    "text": "Avalio o sucesso de um dia pela quantidade de metas concretas que concluí.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 6,
+    "text": "A qualidade das conexões e do clima entre as pessoas importa mais para mim do que protocolos rígidos.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 7,
+    "text": "A precisão técnica e a qualidade impecável de um trabalho vêm antes da velocidade ou da aparência.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 8,
+    "text": "Preservar a paz e o respeito mútuo no grupo vale mais para mim do que vencer uma discussão.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 9,
+    "text": "Mantenho minha decisão firme mesmo quando a maioria ao meu redor muda de opinião.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 10,
+    "text": "Mesmo quando fico muito irritado com alguém, a raiva passa rápido e logo volto a conversar normalmente.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 11,
+    "text": "Experiências emocionais intensas continuam ecoando dentro de mim por muito tempo.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 12,
+    "text": "Aceito mudanças da vida com naturalidade, sem sentir que preciso controlar tudo o tempo inteiro.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 13,
+    "text": "Ambientes competitivos e de ritmo acelerado aumentam minha disposição mental.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 14,
+    "text": "Estar rodeado de pessoas, música e movimento recarrega minha bateria mental.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 15,
+    "text": "Preciso de períodos diários de silêncio e solidão para organizar meus pensamentos e recuperar energia.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 16,
+    "text": "Aprecio rotinas previsíveis, confortáveis e sem sobresaltos desnecessários.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 17,
+    "text": "Em trabalhos em equipe, priorizo a eficácia da entrega acima do conforto emocional do grupo.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 18,
+    "text": "Aprendo e desenvolvo ideias muito melhor conversando com alguém do que lendo relatórios sozinho.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 19,
+    "text": "Incomoda-me profundamente ver tarefas feitas de forma superficial apenas para cumprir tabela.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 20,
+    "text": "Tenho facilidade natural para mediar divergências e encontrar um ponto de equilíbrio entre lados opostos.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "rapido",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 21,
+    "text": "Uma quebra de confiança profissional fica registrada na minha memória estratégica por anos.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 22,
+    "text": "Desapego facilmente de planos antigos quando o cenário muda de direção.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 23,
+    "text": "Quando recordo um episódio marcante do passado, sinto a atmosfera emocional quase como se fosse hoje.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 24,
+    "text": "Não fico remoendo ofensas ou aborrecimentos cotidianos depois que o dia termina.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 25,
+    "text": "Sinto necessidade constante de alterar, construir ou aperfeiçoar o ambiente ao meu redor.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 26,
+    "text": "Novidades, viagens e lugares desconhecidos despertam minha curiosidade imediata.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 27,
+    "text": "Ambientes barulhentos, festas longas e excesso de estímulos visuais me esgotam rapidamente.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "medio",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 28,
+    "text": "Conservo minha energia ao longo do dia evitando gastos emocionais ou agitação inútil.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 29,
+    "text": "Quando alguém tenta impor uma regra sem lógica prática, contesto na mesma hora.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 30,
+    "text": "Em uma conversa espontânea, falo o que penso no calor do momento antes de filtrar.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 31,
+    "text": "Quando recebo uma pergunta complexa, prefiro refletir em silêncio antes de responder.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 32,
+    "text": "Raramente ajo por impulso; prefiro observar o desenrolar natural dos fatos antes de intervir.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 33,
+    "text": "Quando defino um princípio pessoal, dificilmente aceito flexibilizá-lo para agradar terceiros.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 34,
+    "text": "Não costumo guardar rancor; para mim, o que passou já ficou para trás.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 35,
+    "text": "Mudanças bruscas no que já estava combinado me causam forte desgaste até eu reorganizar tudo.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 36,
+    "text": "Adapto-me a novas rotinas ou regras de trabalho sem sofrimento emocional.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 37,
+    "text": "Ficar dias seguidos sem um grande desafio prático drena minha vitalidade.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 38,
+    "text": "Penso em voz alta e costumo gesticular bastante enquanto explico uma história.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 39,
+    "text": "Produzo meu melhor trabalho intelectual quando estou em um espaço silencioso e sem interrupções.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 40,
+    "text": "Gosto de observar a vida acontecer de um canto tranquilo, sem pressa e sem barulho.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "medio",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 41,
+    "text": "Decisões rápidas com 80% de certeza valem mais para mim do que esperar a perfeição.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 42,
+    "text": "Quando surge um convite inesperado e interessante, aceito na hora sem calcular muito.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 43,
+    "text": "Em ambientes desconhecidos, observo atentamente a dinâmica das pessoas antes de me expor.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 44,
+    "text": "Diante de provocações gratuitas, escolho não entrar no confronto e preservo minha serenidade.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão e fadiga, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 45,
+    "text": "Prefiro receber críticas diretas e objetivas do que elogios suaves que não melhoram meu desempenho.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 46,
+    "text": "Faço amizade com desconhecidos em poucos minutos em qualquer fila, evento ou viagem.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 47,
+    "text": "Organizo minhas atividades com critérios claros de prioridade, método e documentação.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 48,
+    "text": "As pessoas costumam me procurar como ouvinte confiável porque não julgo nem exponho ninguém.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 49,
+    "text": "Minha presença física e meu tom de voz costumam ocupar o espaço naturalmente em uma sala.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 50,
+    "text": "Em eventos sociais ou encontros de equipe, sou um dos últimos a sentir vontade de ir embora.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 51,
+    "text": "Após um dia intenso de reuniões ou eventos sociais, preciso me recolher sem falar com ninguém.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 52,
+    "text": "Quando estou cansado, meu corpo pede descanso imediato, leitura leve ou silêncio confortável.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 53,
+    "text": "Sob pressão intensa, minha mente acelera e corta etapas burocráticas imediatamente.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 54,
+    "text": "Tenho facilidade para improvisar apresentações ou respostas sem roteiro prévio.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 55,
+    "text": "Sob pressão para decidir rápido sem dados suficientes, sinto forte desconforto interno.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 56,
+    "text": "Tenho paciência natural para ouvir longas explicações sem interromper quem está falando.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 57,
+    "text": "Quando lidero uma iniciativa, distribuo tarefas olhando para competência técnica e velocidade.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 58,
+    "text": "Gosto de celebrar pequenas conquistas com a equipe para manter todo mundo motivado.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 59,
+    "text": "Prefiro trabalhar com padrões elevados de exigência, mesmo que isso demande mais esforço solitário.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 60,
+    "text": "Em decisões coletivas, levo em conta o bem-estar da equipe para que ninguém se sinta atropelado.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 61,
+    "text": "Não esqueço facilmente promessas não cumpridas que prejudicaram um resultado importante.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 62,
+    "text": "Meus interesses se renovam com frequência e gosto de experimentar áreas diferentes ao longo do ano.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 63,
+    "text": "Cultivo poucos vínculos afetivos, mas dedico a eles uma lealdade profunda e duradoura.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 64,
+    "text": "Quando alguém discorda das minhas ideias, entendo que cada pessoa tem seu ponto de vista e sigo em paz.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 65,
+    "text": "Se percebo uma falha grave em um projeto, aponto o problema sem rodeios.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 66,
+    "text": "Sob tédio prolongado, busco imediatamente algum estímulo novo ou conversa para mudar o clima.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 67,
+    "text": "Reviso mensagens, textos e projetos várias vezes antes de considerar que estão prontos para entrega.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 68,
+    "text": "Não me deixo contagiar pela pressa alheia; executo minhas tarefas em um ritmo constante e seguro.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 69,
+    "text": "Se um método não traz resultado mensurável em pouco tempo, descarto e troco de estratégia.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 70,
+    "text": "Trabalhar isolado por muitos dias seguidos reduz drasticamente meu rendimento e minha motivação.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 71,
+    "text": "Para mim, coerência ética e fidelidade à verdade são inegociáveis em qualquer decisão.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 72,
+    "text": "Prefiro cooperar nos bastidores a disputar cargos de visibilidade ou competição agressiva.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 73,
+    "text": "Após assumir um compromisso de longo prazo, persisto nele com obstinação até concluir.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 74,
+    "text": "Quando um imprevisto cancela uma viagem ou evento, encontro outra alternativa divertida sem sofrer por muito tempo.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 75,
+    "text": "Uma palavra dura ou decepção vinda de alguém importante demora semanas para cicatrizar em mim.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 76,
+    "text": "Minhas emoções raramente oscilam entre extremos; mantenho uma linha afetiva equilibrada.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 77,
+    "text": "Recupero meu ânimo mais rápido entrando em movimento do que ficando parado em silêncio.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 78,
+    "text": "Quando passo um fim de semana inteiro trancado em casa sem conversar, sinto queda de humor.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 79,
+    "text": "Sinto-me mais confortável expressando reflexões complexas por escrito do que falando de improviso para multidões.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 80,
+    "text": "Tenho excelente resistência para tarefas contínuas e metódicas que exigem constância.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 81,
+    "text": "Discussões puramente sociais no meio de uma entrega urgente me parecem desperdício de energia.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 82,
+    "text": "Consigo integrar pessoas tímidas ou diferentes na mesma roda de conversa sem esforço.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 83,
+    "text": "Detecto inconsistências lógicas, erros de digitação ou falhas de simetria que passam despercebidos pelos outros.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 84,
+    "text": "Ambientes marcados por hostilidade e disputas de ego drenam minha vontade de participar.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 85,
+    "text": "Críticas injustas ao meu trabalho despertam em mim uma determinação duradoura de provar o contrário.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 86,
+    "text": "Sob cansaço, minha atenção se dispersa com facilidade para estímulos visuais ou sonoros do ambiente.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 87,
+    "text": "Costumo repassar diálogos antigos na mente analisando o que eu poderia ter dito de forma mais exata.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 88,
+    "text": "Se um plano dá errado, ajusto a rota com tranquilidade sem transformar o imprevisto em tragédia.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 89,
+    "text": "Enfrentar crises reais no trabalho desperta um estado de alerta que me faz produzir em dobro.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 90,
+    "text": "Adoro compartilhar descobertas, histórias e experiências no exato momento em que acontecem.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 91,
+    "text": "Evito ser o centro das atenções; prefiro que a qualidade do meu trabalho fale por mim.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 92,
+    "text": "Sob excesso de demandas simultâneas, tendo a desacelerar e adiar o que não é estritamente urgente.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 93,
+    "text": "Sinto impaciência física quando uma reunião se arrasta sem definir ações concretas.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 94,
+    "text": "Minhas expressões faciais entregam na hora o que estou sentindo.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 95,
+    "text": "Quando alguém me ofende de surpresa, fico em silêncio no momento e processo a resposta horas depois.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 96,
+    "text": "Quando surge um conflito na equipe, aguardo os ânimos esfriarem antes de propor um caminho.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "completo",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão e fadiga, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 97,
+    "text": "Tenho convicções muito nítidas sobre o que funciona e resisto a modismos passageiros.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 98,
+    "text": "Prefiro a variedade de múltiplos projetos curtos à repetição da mesma rotina por anos.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 99,
+    "text": "Tenho forte apego a valores, memórias e referências estéticas que construíram minha história.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 100,
+    "text": "Lembranças do passado aparecem na minha mente de forma neutra, sem despertar angústia.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 101,
+    "text": "Tenho facilidade natural para mobilizar pessoas indecisas em direção a um objetivo comum.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 102,
+    "text": "Ambientes dinâmicos e cheios de troca humana estimulam minha criatividade.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 103,
+    "text": "O excesso de convivência forçada sem espaço de privacidade gera em mim irritabilidade silenciosa.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 104,
+    "text": "Minha presença em grupos é discreta, tranquila e acolhedora.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 105,
+    "text": "Em discussões acaloradas, meu instinto imediato é elevar a firmeza da voz e sustentar meu ponto.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 106,
+    "text": "Mudo de estratégia rapidamente quando percebo um caminho mais criativo e envolvente.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 107,
+    "text": "Prefiro planejar cada etapa com antecedência do que depender de improvisos de última hora.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 108,
+    "text": "Demoro a me irritar, sendo necessário um acúmulo muito grande de pressão para me tirar do eixo.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão e fadiga, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 109,
+    "text": "Costumo transformar até atividades de lazer em desafios com metas de superação.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 110,
+    "text": "Prefiro persuadir pelo entusiasmo e pela empatia do que pela imposição de regras.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 111,
+    "text": "Sob estresse, torno-me ainda mais exigente comigo mesmo e com a exatidão dos detalhes.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 112,
+    "text": "Convivo de forma pacífica com perfis muito diferentes do meu sem tentar mudá-los.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 113,
+    "text": "Prefiro rotinas intensas e cheias de decisão a agendas lentas e previsíveis.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 114,
+    "text": "Sob estresse, procuro conversar e desabafar com pessoas próximas para aliviar a pressão.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 115,
+    "text": "Meu mundo interior de ideias e análises é mais rico e seguro do que a agitação externa.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 116,
+    "text": "Prefiro finais de semana calmos em casa ou na natureza a agendas lotadas de compromissos.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 117,
+    "text": "Prefiro resolver um conflito frente a frente agora do que adiar a conversa para outro dia.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 118,
+    "text": "Quando estou ansioso ou sobrecarregado, tendo a falar mais rápido e pular de um assunto para outro.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 119,
+    "text": "Antecipo mentalmente possíveis falhas de um plano mesmo quando todos ao redor estão otimistas.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 120,
+    "text": "Prefiro decisões graduais e consensuais a rupturas drásticas.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 121,
+    "text": "Para mim, a lealdade de um parceiro se prova na execução firme do que foi combinado.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 122,
+    "text": "Quando preciso dar um retorno difícil a alguém, busco suavizar o tom para preservar a relação.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 123,
+    "text": "Prefiro conversas densas sobre ideias, ciência ou filosofia a amenidades sociais superficiais.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 124,
+    "text": "Quando preciso cobrar algo de alguém, faço isso de maneira diplomática e gentil.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 125,
+    "text": "Quando sofro uma derrota competitiva, analiso o erro repetidas vezes até dominar a situação.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 126,
+    "text": "Quando lembro de situações difíceis do passado, não revivo a dor emocional daquela época.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 127,
+    "text": "Não consigo fingir naturalidade imediata quando algo viola meus princípios internos.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 128,
+    "text": "Consigo desligar dos problemas do trabalho assim que chego em casa para descansar.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 129,
+    "text": "Quando um obstáculo surge de repente, parto para a ação antes de pedir permissão.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 130,
+    "text": "Costumo iniciar projetos pelo entusiasmo da ideia antes de ler todos os detalhes técnicos.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 131,
+    "text": "O excesso de cobrança repentina pode travar minha fala se eu não tiver tempo para organizar o raciocínio.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 132,
+    "text": "Em situações de urgência, minha primeira reação é respirar fundo e estabilizar o ambiente.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão e fadiga, sem confundir serenidade com falta de interesse."
+    }
+  },
+  {
+    "id": 133,
+    "text": "Sob estresse prolongado, fecho meu foco exclusivamente na meta final e ignoro distrações laterais.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 134,
+    "text": "Sinto realização genuína quando percebo que minha presença animou o dia de outras pessoas.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 135,
+    "text": "Aprecio sistemas bem estruturados onde cada regra possui um fundamento claro.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 136,
+    "text": "Sob pressão de líderes autoritários, tendo a concordar externamente para evitar atrito desnecessário.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 137,
+    "text": "Custa-me ceder o controle de uma tarefa quando sei que posso executá-la com maior rigor.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 138,
+    "text": "Aceito opiniões contrárias à minha com leveza, sem transformar a divergência em um conflito pessoal.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 139,
+    "text": "Obras de arte, músicas ou livros densos deixam impressões que permanecem comigo por dias.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 140,
+    "text": "Diante de crises prolongadas, minha estabilidade emocional funciona como amortecedor contra o estresse.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 141,
+    "text": "Quando estou esgotado, ainda encontro reserva de energia se surgir uma missão urgente.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 142,
+    "text": "Sinto atração natural por experiências sensoriais, gastronomia, arte viva e encontros presenciais.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 143,
+    "text": "Prefiro encontros individuais e conversas profundas a eventos com dezenas de conhecidos.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 144,
+    "text": "Preciso de tempo sem pressão externa para iniciar mudanças grandes na minha vida.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 145,
+    "text": "Prefiro ter autonomia de comando em um projeto difícil do que um papel secundário confortável.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Sua bússola decisória prioriza resultados mensuráveis, eficácia prática e cumprimento objetivo de metas.",
+      "agreeExample": "Ao avaliar um projeto, você olha primeiro para o indicador entregue e a velocidade de execução.",
+      "disagree": "Você coloca o bem-estar das pessoas, a harmonia do grupo ou a perfeição metodológica acima da simples rapidez de entrega.",
+      "disagreeExample": "Você prefere ajustar um prazo ou suavizar uma cobrança para não desgastar o clima da equipe.",
+      "note": "A pergunta mede se sua energia se orienta primariamente para a tração de metas ou para a preservação do contexto humano ao redor."
+    }
+  },
+  {
+    "id": 146,
+    "text": "Ambientes frios e puramente burocráticos me causam sensação de sufocamento.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "A troca humana, o entusiasmo compartilhado e a leveza nas relações são essenciais para o seu rendimento.",
+      "agreeExample": "Você desenvolve ideias muito melhor conversando com colegas do que isolado preenchendo planilhas.",
+      "disagree": "Você funciona melhor focado diretamente na tarefa técnica ou em análises individuais, sem depender do clima social.",
+      "disagreeExample": "Trabalhar sozinho por vários dias seguidos em um projeto técnico é confortável e produtivo para você.",
+      "note": "Esta afirmativa diferencia quem extrai motivação do contato interpessoal de quem prioriza processos autônomos."
+    }
+  },
+  {
+    "id": 147,
+    "text": "Julgo meu próprio desempenho por uma régua interna mais severa do que a cobrança externa.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Exatidão técnica, coerência ética e profundidade estrutural são prioridades inegociáveis no que você faz.",
+      "agreeExample": "Você revisa um trabalho até que cada detalhe esteja coerente, mesmo que ninguém mais perceba a diferença.",
+      "disagree": "Você prioriza soluções práticas e flexíveis ou o bom andamento social acima do perfeccionismo nos detalhes.",
+      "disagreeExample": "Para você, entregar algo funcional rapidamente ou manter o grupo leve vale mais do que refinar minúcias.",
+      "note": "Esta questão observa o grau de rigor metodológico e sensibilidade a falhas estruturais no seu cotidiano."
+    }
+  },
+  {
+    "id": 148,
+    "text": "Valorizo relações estáveis, previsíveis e livres de dramas emocionais.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "foco_direcional",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você valoriza a paz, a diplomacia, a escuta acolhedora e a convivência respeitosa acima de disputas de ego.",
+      "agreeExample": "Em uma divergência de equipe, você atua como mediador para encontrar um ponto comum sem gerar atrito.",
+      "disagree": "Você prefere o confronto franco de ideias e a cobrança direta por resultados, mesmo que isso gere tensão.",
+      "disagreeExample": "Se algo está errado, você prefere apontar diretamente a falha a suavizar o discurso pela harmonia.",
+      "note": "O objetivo aqui é identificar o peso que a harmonia relacional e a diplomacia exercem nas suas escolhas."
+    }
+  },
+  {
+    "id": 149,
+    "text": "Mesmo anos depois, lembro com nitidez de quem me apoiou ou tentou me sabotar em momentos decisivos.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas decisões, princípios e registros de confiança ficam gravados de maneira firme e duradoura.",
+      "agreeExample": "Quando você assume uma posição ou identifica uma quebra de lealdade, essa marca permanece ativa por longo tempo.",
+      "disagree": "Você flexibiliza posições com facilidade e vira a página rapidamente após divergências ou mudanças de rota.",
+      "disagreeExample": "Mesmo após um atrito profissional forte, você retoma a convivência normal no dia seguinte sem carregar o episódio.",
+      "note": "O foco aqui é medir a persistência do estímulo na sua memória executiva, distinguindo perfis de marcação firme de perfis mais plásticos."
+    }
+  },
+  {
+    "id": 150,
+    "text": "Tenho mais facilidade para começar iniciativas empolgantes do que para preencher controles detalhados no final.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você possui alta plasticidade emocional: sente intensamente no momento, mas desapega rápido e renova o foco.",
+      "agreeExample": "Se um plano muda de última hora ou ocorre uma discussão, você logo supera o incômodo e parte para outra novidade.",
+      "disagree": "Mudanças repentinas ou impactos emocionais permanecem ecoando em você por bastante tempo.",
+      "disagreeExample": "Quando um combinado importante é cancelado em cima da hora, você demora a reorganizar seu estado interno.",
+      "note": "A questão avalia a velocidade de renovação emocional após imprevistos ou frustrações cotidianas."
+    }
+  },
+  {
+    "id": 151,
+    "text": "Quando cometo um erro relevante, custa-me perdoar minha própria falha.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Vivências, palavras, memórias e compromissos deixam marcas profundas e duradouras no seu mundo interno.",
+      "agreeExample": "Um diálogo significativo ou uma falha cometida continua sendo analisado na sua mente por dias ou semanas.",
+      "disagree": "As experiências passam por você sem deixar peso prolongado; você desliga facilmente do que já aconteceu.",
+      "disagreeExample": "Terminado o expediente ou encerrada uma conversa difícil, você não volta a repassar o assunto na cabeça.",
+      "note": "O item avalia a profundidade de retenção afetiva e cognitiva, característica central da memória de longo alcance."
+    }
+  },
+  {
+    "id": 152,
+    "text": "Flexibilizo minhas preferências pessoais com facilidade quando isso simplifica a convivência.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "retencao_estimulo",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você absorve mudanças e contratempos com serenidade, sem remoer aborrecimentos ou oscilar entre extremos.",
+      "agreeExample": "Ao chegar em casa após um dia tenso, você se desliga facilmente das preocupações e descansa em paz.",
+      "disagree": "Imprevistos e tensões ficam retidos na sua mente por bastante tempo, exigindo esforço para desacelerar.",
+      "disagreeExample": "Mesmo horas após um problema, sua mente continua buscando formas de controlar ou corrigir a situação.",
+      "note": "A questão avalia sua capacidade homeostática de amortecer impactos cotidianos e retornar rapidamente à tranquilidade."
+    }
+  },
+  {
+    "id": 153,
+    "text": "Expresso minhas discordâncias com vigor físico e gestos diretos.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Desafios intensos, movimento prático e capacidade de influenciar o ambiente elevam sua vitalidade.",
+      "agreeExample": "Dias cheios de decisões difíceis deixam você mentalmente desperto e motivado.",
+      "disagree": "Ambientes competitivos e agitados consomem sua bateria, fazendo você preferir ritmos calmos ou trabalho recolhido.",
+      "disagreeExample": "Após algumas horas de pressão externa, você sente necessidade de silêncio e afastamento para recarregar.",
+      "note": "A questão investiga como seu sistema nervoso regula energia diante de demandas intensas do ambiente externo."
+    }
+  },
+  {
+    "id": 154,
+    "text": "Minha energia sobe visivelmente quando recebo atenção ou reconhecimento espontâneo do grupo.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": 1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Novidades, convivência social, conversas vivas e ambientes movimentados recarregam seu ânimo.",
+      "agreeExample": "Encontrar amigos ou conhecer lugares novos depois do expediente devolve sua disposição.",
+      "disagree": "Excesso de interação social e estímulos sensoriais cansa você, exigindo recolhimento solitário para descansar.",
+      "disagreeExample": "Depois de um evento movimentado, você precisa ficar sozinho em um ambiente silencioso para recuperar o fôlego.",
+      "note": "O objetivo é identificar se sua recarga energética ocorre pela expansão social externa ou pelo recolhimento interno."
+    }
+  },
+  {
+    "id": 155,
+    "text": "Quando estou exausto, desligo notificações e me afasto do mundo externo para me recompor.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "O silêncio, a privacidade e o foco ininterrupto são indispensáveis para sua produtividade e recarga mental.",
+      "agreeExample": "Você produz suas melhores análises quando trabalha sozinho em um ambiente calmo e previsível.",
+      "disagree": "O isolamento silencioso tira seu estímulo; você rende melhor em ambientes movimentados e interativos.",
+      "disagreeExample": "Trabalhar cercado de pessoas conversando e trocando ideias acelera seu ritmo mental.",
+      "note": "A questão verifica o quanto seu cérebro necessita de redução de estímulos externos para operar em máxima capacidade."
+    }
+  },
+  {
+    "id": 156,
+    "text": "Valorizo o conforto físico, o sono regular e um ritmo de vida sustentável a longo prazo.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "ativacao_energetica",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você prefere um ritmo de vida constante, previsível e econômico em energia, evitando agitação desnecessária.",
+      "agreeExample": "Finais de semana tranquilos, rotinas bem estabelecidas e tarefas metódicas trazem conforto e alto rendimento para você.",
+      "disagree": "Você busca intensidade constante, desafios competitivos ou agendas cheias de novidades e movimento.",
+      "disagreeExample": "Rotinas muito calmas e previsíveis deixam você inquieto e em busca de novos desafios.",
+      "note": "A pergunta observa como você administra sua reserva diária de energia entre conservação serena e busca por estímulos intensos."
+    }
+  },
+  {
+    "id": 157,
+    "text": "O cansaço extremo costuma me deixar mais incisivo e intolerante à lentidão alheia.",
+    "temperament": "colerico",
+    "neuroSystem": "testosterona",
+    "eysenckDimension": "extroversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você sente um impulso natural para agir rápido, assumir o comando e resolver gargalos no momento em que eles aparecem.",
+      "agreeExample": "Em uma emergência ou reunião travada, você toma a palavra espontaneamente e define o próximo passo.",
+      "disagree": "Você prefere observar o cenário, ouvir outros pontos de vista ou refletir com calma antes de intervir diretamente.",
+      "disagreeExample": "Diante de um impasse súbito, você aguarda ter mais dados ou deixa que outra pessoa conduza a reação inicial.",
+      "note": "Esta questão avalia seu tempo de ignição comportamental diante de estímulos imediatos, e não sua competência técnica. Tanto a resposta rápida quanto a cautelosa possuem vantagens estratégicas."
+    }
+  },
+  {
+    "id": 158,
+    "text": "Se o clima de uma sala está pesado, intervenho logo com humor para quebrar a tensão.",
+    "temperament": "sanguineo",
+    "neuroSystem": "dopamina",
+    "eysenckDimension": "extroversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": 1,
+    "stressContext": true,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Suas emoções, falas e ideias ganham expressão imediata e espontânea assim que um estímulo surge.",
+      "agreeExample": "Ao ouvir uma novidade empolgante, você reage na mesma hora com entusiasmo, comentários e improviso.",
+      "disagree": "Você costuma filtrar internamente o que sente e pensa antes de demonstrar qualquer reação externa.",
+      "disagreeExample": "Mesmo quando gosta muito de uma ideia, você mantém a expressão contida e analisa em silêncio primeiro.",
+      "note": "A pergunta observa a espontaneidade expressiva no momento do acontecimento, sem julgar se é melhor improvisar ou planejar."
+    }
+  },
+  {
+    "id": 159,
+    "text": "Desconfio de soluções fáceis para problemas que exigem investigação profunda.",
+    "temperament": "melancolico",
+    "neuroSystem": "estrogenio",
+    "eysenckDimension": "introversao_instavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você pondera riscos, variáveis e detalhes com cautela antes de falar, decidir ou se expor.",
+      "agreeExample": "Diante de uma pergunta importante, você prefere organizar todo o raciocínio antes de dar uma resposta definitiva.",
+      "disagree": "Você prefere decidir e agir rapidamente no calor do momento, ajustando os detalhes durante o percurso.",
+      "disagreeExample": "Você lança uma ideia ou inicia uma ação imediatamente, mesmo sem ter mapeado todos os riscos.",
+      "note": "A pergunta mede a necessidade de processamento prévio antes da ação, contrastando cautela analítica e impulso imediato."
+    }
+  },
+  {
+    "id": 160,
+    "text": "Evito julgamentos precipitados sobre as intenções das outras pessoas.",
+    "temperament": "fleumatico",
+    "neuroSystem": "serotonina",
+    "eysenckDimension": "introversao_estavel",
+    "primaryAxis": "reatividade",
+    "axisPolarity": -1,
+    "stressContext": false,
+    "tier": "banco",
+    "explanation": {
+      "agree": "Você preserva a calma, a paciência e a cadência estável mesmo diante de pressões, urgências ou provocações.",
+      "agreeExample": "Quando o ambiente ao redor entra em agitação, você respira fundo e mantém o tom de voz sereno.",
+      "disagree": "Você reage de forma imediata, intensa ou acelerada quando surge uma urgência ou provocação.",
+      "disagreeExample": "Diante de lentidão ou crise, você sente urgência imediata de intervir e acelerar o ritmo.",
+      "note": "A pergunta mede a estabilidade do seu ritmo de resposta sob pressão, sem confundir serenidade com falta de interesse."
+    }
+  }
+]

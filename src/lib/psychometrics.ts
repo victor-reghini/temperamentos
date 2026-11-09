@@ -535,3 +535,96 @@ export function compareTemperamentMatrices(
 
   return insights;
 }
+
+export interface BiologicalMatrixCoordinates {
+  // Coordenadas cartesianas [-100, +100]
+  x: number; // -100 (Extremo Seco) a +100 (Extremo Úmido)
+  y: number; // -100 (Extremo Frio) a +100 (Extremo Quente)
+  // Percentuais de plotagem no SVG [0..100%]
+  // plotX: 0% = Seco (esquerda), 100% = Úmido (direita)
+  // plotY: 0% = Quente (topo), 100% = Frio (base)
+  plotX: number;
+  plotY: number;
+  // Valores distributivos percentuais absolutos [0..100]
+  hotPercent: number;
+  coldPercent: number;
+  dryPercent: number;
+  wetPercent: number;
+  // Qualidade galênica e quadrante
+  primaryQuality: string;
+  quadrantName: string;
+  quadrantDescription: string;
+}
+
+export function calculateBiologicalMatrixCoordinates(
+  result: TemperamentResult
+): BiologicalMatrixCoordinates {
+  const { colerico, sanguineo, melancolico } = result.temperaments;
+
+  // Ponderação clássica dos 4 humores
+  const hotWeight = colerico + sanguineo;
+  const dryWeight = colerico + melancolico;
+
+  // Afinamento com os eixos psicométricos da matriz
+  const reatAxis = result.axes.reatividade;
+  const retAxis = result.axes.retencao_estimulo;
+
+  const reatHot = reatAxis ? reatAxis.left : hotWeight;
+  const retDry = retAxis ? retAxis.left : dryWeight;
+
+  const finalHot = Math.min(95, Math.max(5, Math.round(hotWeight * 0.6 + reatHot * 0.4)));
+  const finalCold = 100 - finalHot;
+  const finalDry = Math.min(95, Math.max(5, Math.round(dryWeight * 0.6 + retDry * 0.4)));
+  const finalWet = 100 - finalDry;
+
+  // x: -100 (Seco) a +100 (Úmido)
+  const x = finalWet - finalDry;
+  // y: -100 (Frio) a +100 (Quente)
+  const y = finalHot - finalCold;
+
+  // plotX: 0% (Seco / Esquerda) -> 100% (Úmido / Direita)
+  const plotX = finalWet;
+  // plotY: 0% (Quente / Topo) -> 100% (Frio / Base)
+  const plotY = finalCold;
+
+  // Determinação do quadrante galênico
+  let primaryQuality = '';
+  let quadrantName = '';
+  let quadrantDescription = '';
+
+  if (y >= 0 && x <= 0) {
+    primaryQuality = 'Quente e Seco';
+    quadrantName = 'Quadrante Colérico';
+    quadrantDescription =
+      'Combinação de alta velocidade de reação com marcação duradoura. Foco em execução direta, autonomia decisória e resistência a concessões desnecessárias.';
+  } else if (y >= 0 && x > 0) {
+    primaryQuality = 'Quente e Úmido';
+    quadrantName = 'Quadrante Sanguíneo';
+    quadrantDescription =
+      'Combinação de alta velocidade de reação com plasticidade adaptativa. Foco em conexão humana, agilidade para pivotar e contágio entusiasta no grupo.';
+  } else if (y < 0 && x <= 0) {
+    primaryQuality = 'Frio e Seco';
+    quadrantName = 'Quadrante Melancólico';
+    quadrantDescription =
+      'Combinação de ponderação cautelosa com retenção profunda de estímulos. Foco em consistência metodológica, rigor analítico e antecipação de riscos.';
+  } else {
+    primaryQuality = 'Frio e Úmido';
+    quadrantName = 'Quadrante Fleumático';
+    quadrantDescription =
+      'Combinação de ritmo ponderado com plasticidade diplomática. Foco em estabilidade emocional, mediação pacífica de tensões e conservação de energia.';
+  }
+
+  return {
+    x,
+    y,
+    plotX,
+    plotY,
+    hotPercent: finalHot,
+    coldPercent: finalCold,
+    dryPercent: finalDry,
+    wetPercent: finalWet,
+    primaryQuality,
+    quadrantName,
+    quadrantDescription,
+  };
+}

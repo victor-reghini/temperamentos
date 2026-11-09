@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import { TemperamentBars } from '../components/TemperamentBars';
+import { TemperamentQuadrantChart } from '../components/TemperamentQuadrantChart';
 import {
   buildWhatsAppShareUrl,
   type ExportCardFormat,
@@ -14,6 +15,7 @@ import {
   isSupabaseConfigured,
 } from '../lib/storage';
 import { encodeResultToBase64 } from '../lib/validation';
+import { useSeo } from '../lib/useSeo';
 import type { TemperamentResult } from '../types/temperament';
 
 export function ResultsPage() {
@@ -28,10 +30,24 @@ export function ResultsPage() {
   const [canvasDataUrl, setCanvasDataUrl] = useState<string | null>(null);
   const [isGeneratingCanvas, setIsGeneratingCanvas] = useState<boolean>(false);
   const [isGeneratingPdf, setIsGeneratingPdf] = useState<boolean>(false);
+  const [pdfDownloadUrl, setPdfDownloadUrl] = useState<string | null>(null);
+  const [pdfError, setPdfError] = useState<string | null>(null);
   const [copiedLink, setCopiedLink] = useState<boolean>(false);
   const [checkoutStatus, setCheckoutStatus] = useState<string | null>(null);
 
   const stripeLive = isStripeConfigured();
+
+  useSeo({
+    title: result
+      ? `Resultado: ${result.compositeName} | 4T Temperamentos`
+      : 'Resultado do Teste | 4T Temperamentos',
+    description: result
+      ? `Mapeamento comportamental ${result.compositeName}: predomínio ${result.dominant} com modulação secundária ${result.secondary}. Proporção dos 4 temperamentos e matriz neurobiológica.`
+      : 'Resultado psicométrico e mapeamento humoral completo dos 4 temperamentos.',
+    canonical: result?.id
+      ? `https://temperamentos.com.br/r/${result.id}`
+      : 'https://temperamentos.com.br/results',
+  });
 
   useEffect(() => {
     let active = true;
@@ -156,9 +172,18 @@ export function ResultsPage() {
 
   const handleDownloadPdf = async () => {
     setIsGeneratingPdf(true);
+    setPdfError(null);
     try {
       const { downloadNeuroManualPdf } = await import('../components/NeuroManualPdf');
-      await downloadNeuroManualPdf(result);
+      const url = await downloadNeuroManualPdf(result);
+      setPdfDownloadUrl(url);
+    } catch (err) {
+      console.error('Falha ao exportar PDF:', err);
+      setPdfError(
+        err instanceof Error
+          ? err.message
+          : 'Não foi possível gerar o arquivo PDF no navegador. Tente novamente.'
+      );
     } finally {
       setIsGeneratingPdf(false);
     }
@@ -250,6 +275,9 @@ export function ResultsPage() {
 
       {/* Barras de Temperamento e 4 Eixos Bipolares */}
       <TemperamentBars result={result} />
+
+      {/* Gráfico Cartesiano dos 4 Quadrantes (Quente/Frio x Seco/Úmido) */}
+      <TemperamentQuadrantChart result={result} />
 
       {/* Exportador HTML5 Canvas */}
       <section
@@ -445,25 +473,50 @@ export function ResultsPage() {
               className="min-h-[46px] px-5 py-2.5 rounded-xl bg-[#78c6b5] hover:bg-[#68b8a7] text-[#0e241f] dark:bg-[#3d5f83] dark:hover:bg-[#4a729c] dark:text-[#ffffff] disabled:opacity-50 font-bold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#6a92be]"
             >
               {isGeneratingPdf
-                ? 'Renderizando PDF no Cliente...'
-                : 'Baixar Manual Neurofuncional em PDF'}
+                ? 'Renderizando Relatório em PDF...'
+                : 'Baixar Relatório Completo em PDF'}
             </button>
 
-            <button
-              type="button"
-              onClick={handleStripeCheckout}
-              className="min-h-[46px] px-4 py-2.5 rounded-xl bg-[#eae8de] dark:bg-[#1e1e1e] hover:bg-[#dedcd0] dark:hover:bg-[#282828] text-[#18191b] dark:text-[#d4d4d4] border border-[#c8c6ba] dark:border-[#333333] font-semibold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#4a729c]"
-            >
-              {stripeLive
-                ? 'Adquirir Versão Premium via Stripe'
-                : 'Testar Fluxo de Checkout (Modo Simulação)'}
-            </button>
+            {stripeLive && (
+              <button
+                type="button"
+                onClick={handleStripeCheckout}
+                className="min-h-[46px] px-4 py-2.5 rounded-xl bg-[#eae8de] dark:bg-[#1e1e1e] hover:bg-[#dedcd0] dark:hover:bg-[#282828] text-[#18191b] dark:text-[#d4d4d4] border border-[#c8c6ba] dark:border-[#333333] font-semibold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#4a729c]"
+              >
+                Adquirir Versão Premium via Stripe
+              </button>
+            )}
           </div>
 
           <span className="font-mono text-xs text-[#5c5e64] dark:text-[#969696]">
             Coordenadas PEN: Extroversão {result.eysenck.extroversao}% • Sensibilidade {result.eysenck.neuroticismo}%
           </span>
         </div>
+
+        {pdfDownloadUrl && (
+          <div className="flex flex-wrap items-center gap-2 p-3 rounded-xl bg-[#dcf2ec] dark:bg-[#1f2b26] border border-[#a8dec5] dark:border-[#2f5546] text-[#1b5247] dark:text-[#a3e2cf] text-xs font-mono">
+            <span className="font-bold">✓ PDF gerado com sucesso!</span>
+            <span>Se o download não iniciou automaticamente no seu navegador,</span>
+            <a
+              href={pdfDownloadUrl}
+              download={`manual-neurofuncional-${result.id}.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-bold text-[#0e241f] dark:text-[#ffffff] hover:opacity-80"
+            >
+              clique aqui para abrir ou salvar o arquivo PDF
+            </a>
+          </div>
+        )}
+
+        {pdfError && (
+          <div
+            role="alert"
+            className="p-3 rounded-xl bg-red-100 dark:bg-red-950/40 border border-red-300 dark:border-red-800 text-red-800 dark:text-red-300 text-xs font-mono"
+          >
+            {pdfError}
+          </div>
+        )}
 
         {checkoutStatus && (
           <div

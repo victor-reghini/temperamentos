@@ -13,6 +13,7 @@ import {
   saveQuizProgress,
 } from '../lib/storage';
 import { LikertValueSchema } from '../lib/validation';
+import { useSeo } from '../lib/useSeo';
 import type { LikertValue, QuizModality, TemperamentQuestion } from '../types/temperament';
 
 export function QuizPage() {
@@ -32,6 +33,13 @@ export function QuizPage() {
   const [isExplainOpen, setIsExplainOpen] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  useSeo({
+    title: 'Questionário dos 4 Temperamentos | 4T',
+    description:
+      'Responda o questionário dos 4 temperamentos e descubra seu perfil comportamental entre Colérico, Sanguíneo, Melancólico e Fleumático.',
+    canonical: 'https://temperamentos.com.br/quiz',
+  });
 
   const baseQuestions = useMemo(() => getQuestionsForModality(modality), [modality]);
   const questions = useMemo(

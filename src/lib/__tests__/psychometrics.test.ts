@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  calculateBiologicalMatrixCoordinates,
   calculateTemperamentResult,
   compareTemperamentMatrices,
   getQuestionsForModality,
@@ -115,5 +116,20 @@ describe('TemperamentAxes Psychometric Engine & Validation', () => {
     const checkoutData = JSON.parse(checkoutResp.body);
     expect(checkoutData.mode).toBe('demo');
     expect(checkoutData.unlocked).toBe(true);
+  });
+
+  it('calculates 2D Cartesian biological matrix coordinates (Quente/Frio x Seco/Umido)', () => {
+    const qs = getQuestionsForModality('rapido');
+    const ansCol: Record<string, LikertValue> = {};
+    for (const q of qs) ansCol[String(q.id)] = q.temperament === 'colerico' ? 2 : -2;
+    const resCol = calculateTemperamentResult('rapido', ansCol);
+    const coordsCol = calculateBiologicalMatrixCoordinates(resCol);
+
+    expect(coordsCol.hotPercent).toBeGreaterThan(coordsCol.coldPercent);
+    expect(coordsCol.dryPercent).toBeGreaterThan(coordsCol.wetPercent);
+    expect(coordsCol.primaryQuality).toBe('Quente e Seco');
+    expect(coordsCol.quadrantName).toBe('Quadrante Colérico');
+    expect(coordsCol.plotX).toBeLessThan(50); // Seco (Esquerda)
+    expect(coordsCol.plotY).toBeLessThan(50); // Quente (Topo)
   });
 });

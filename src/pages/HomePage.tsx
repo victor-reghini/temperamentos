@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AXES_META, MODALITY_CONFIG, TEMPERAMENT_META } from '../lib/psychometrics';
 import { getLatestLocalResult, loadQuizProgress } from '../lib/storage';
+import { useSeo } from '../lib/useSeo';
 import { encodeResultToBase64 } from '../lib/validation';
 import type { AxisKey, QuizModality, TemperamentKey } from '../types/temperament';
 
@@ -53,6 +54,13 @@ export function HomePage() {
   const savedProgress = loadQuizProgress();
   const latestResult = getLatestLocalResult();
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
+
+  useSeo({
+    title: 'Temperamentos: Teste Gratuito dos 4 Temperamentos e Matriz Humoral',
+    description:
+      'Descubra sua assinatura comportamental real: proporção de humores e mapeamento em 4 eixos psicométricos contínuos. Teste 100% gratuito e privado.',
+    canonical: 'https://temperamentos.com.br/',
+  });
 
   const modalities: QuizModality[] = ['rapido', 'medio', 'completo'];
   const tempKeys: TemperamentKey[] = ['colerico', 'sanguineo', 'melancolico', 'fleumatico'];

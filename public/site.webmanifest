@@ -1,0 +1,18 @@
+{
+  "name": "Temperamentos - Matriz dos 4 Temperamentos",
+  "short_name": "4T",
+  "description": "Mapeamento psicométrico dos 4 temperamentos integrando o modelo PEN de Eysenck e o Fisher Temperament Inventory.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#1e1e1e",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

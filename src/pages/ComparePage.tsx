@@ -6,6 +6,7 @@ import {
   TEMPERAMENT_META,
 } from '../lib/psychometrics';
 import { fetchResultByIdOrHash, getLatestLocalResult } from '../lib/storage';
+import { useSeo } from '../lib/useSeo';
 import { decodeResultFromBase64, encodeResultToBase64 } from '../lib/validation';
 import type { AxisKey, TemperamentKey, TemperamentResult } from '../types/temperament';
 
@@ -92,6 +93,13 @@ export function ComparePage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [friendInput, setFriendInput] = useState<string>('');
   const [inputError, setInputError] = useState<string | null>(null);
+
+  useSeo({
+    title: 'Comparador de Temperamentos | 4T',
+    description:
+      'Compare a matriz neurobiológica e o mapa de fricção comportamental entre dois perfis de temperamento.',
+    canonical: 'https://temperamentos.com.br/compare',
+  });
 
   useEffect(() => {
     let active = true;

@@ -45,19 +45,20 @@ export async function handler(event: NetlifyEvent) {
       process.env.URL ||
       'http://localhost:5173';
 
-    let successUrl = `${origin}/results?unlocked=1`;
+    let successUrl = `${origin}/results?session_id={CHECKOUT_SESSION_ID}`;
     let cancelUrl = `${origin}/results`;
 
     if (body.returnUrl) {
       try {
         const u = new URL(body.returnUrl);
-        u.searchParams.set('unlocked', '1');
-        successUrl = u.toString();
+        u.searchParams.delete('unlocked');
+        u.searchParams.set('session_id', '{CHECKOUT_SESSION_ID}');
+        successUrl = u.toString().replace('%7BCHECKOUT_SESSION_ID%7D', '{CHECKOUT_SESSION_ID}');
         cancelUrl = body.returnUrl;
       } catch {
         successUrl = body.returnUrl.includes('?')
-          ? `${body.returnUrl}&unlocked=1`
-          : `${body.returnUrl}?unlocked=1`;
+          ? `${body.returnUrl}&session_id={CHECKOUT_SESSION_ID}`
+          : `${body.returnUrl}?session_id={CHECKOUT_SESSION_ID}`;
         cancelUrl = body.returnUrl;
       }
     }

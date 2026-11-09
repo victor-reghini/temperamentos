@@ -11,9 +11,13 @@ import {
   encodeResultToBase64,
   LikertValueSchema,
 } from '../validation';
-import { isResultPdfUnlocked, unlockResultPdf } from '../storage';
+import { isResultPdfUnlocked, saveResultPdfToken } from '../storage';
 import { handler as resultsHandler } from '../../../netlify/functions/results';
 import { handler as checkoutHandler } from '../../../netlify/functions/create-checkout-session';
+import {
+  generateUnlockSignature,
+  handler as verifyHandler,
+} from '../../../netlify/functions/verify-checkout-session';
 import type { LikertValue } from '../../types/temperament';
 
 describe('TemperamentAxes Psychometric Engine & Validation', () => {
@@ -134,10 +138,41 @@ describe('TemperamentAxes Psychometric Engine & Validation', () => {
     expect(coordsCol.plotY).toBeLessThan(50); // Quente (Topo)
   });
 
-  it('manages PDF unlock state persistently in localStorage', () => {
+  it('manages PDF unlock token persistently in localStorage and validates HMAC signatures', async () => {
     const testId = 'test-unlock-id-99';
     expect(isResultPdfUnlocked(testId)).toBe(false);
-    unlockResultPdf(testId);
+
+    // Salva token criptográfico
+    saveResultPdfToken(testId, 'hmac-mock-token-xyz');
     expect(isResultPdfUnlocked(testId)).toBe(true);
+
+    // Validação criptográfica com verify-checkout-session
+    const secret = 'sk_test_fake_secret_for_tests';
+    const validToken = generateUnlockSignature(secret, testId);
+
+    // Simula validação com token válido
+    const origSecret = process.env.STRIPE_SECRET_KEY;
+    try {
+      process.env.STRIPE_SECRET_KEY = secret;
+      const verifySuccess = await verifyHandler({
+        httpMethod: 'POST',
+        body: JSON.stringify({ resultId: testId, token: validToken }),
+      });
+      expect(verifySuccess.statusCode).toBe(200);
+      const dataSuccess = JSON.parse(verifySuccess.body);
+      expect(dataSuccess.unlocked).toBe(true);
+      expect(dataSuccess.verified).toBe(true);
+
+      // Simula tentativa de fraude com token adulterado
+      const verifyTampered = await verifyHandler({
+        httpMethod: 'POST',
+        body: JSON.stringify({ resultId: testId, token: 'fake_tampered_token' }),
+      });
+      expect(verifyTampered.statusCode).toBe(403);
+      const dataTampered = JSON.parse(verifyTampered.body);
+      expect(dataTampered.unlocked).toBe(false);
+    } finally {
+      process.env.STRIPE_SECRET_KEY = origSecret;
+    }
   });
 });

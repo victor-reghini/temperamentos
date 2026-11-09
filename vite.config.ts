@@ -26,6 +26,7 @@ function localApiMiddleware(env: Record<string, string>): Plugin {
             let modPath = '';
             if (pathName === '/api/results') modPath = '/netlify/functions/results.ts';
             else if (pathName === '/api/create-checkout-session') modPath = '/netlify/functions/create-checkout-session.ts';
+            else if (pathName === '/api/verify-checkout-session') modPath = '/netlify/functions/verify-checkout-session.ts';
             else if (pathName === '/api/stripe-webhook') modPath = '/netlify/functions/stripe-webhook.ts';
             else {
               res.statusCode = 404;

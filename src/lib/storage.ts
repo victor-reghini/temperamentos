@@ -65,11 +65,15 @@ export function isStripeConfigured(): boolean {
 }
 
 export function isResultPdfUnlocked(resultId: string): boolean {
-  return safeGetItem(`temperament_unlocked_${resultId}`) === 'true';
+  return Boolean(safeGetItem(`temperament_unlock_token_${resultId}`));
 }
 
-export function unlockResultPdf(resultId: string): void {
-  safeSetItem(`temperament_unlocked_${resultId}`, 'true');
+export function getResultPdfToken(resultId: string): string | null {
+  return safeGetItem(`temperament_unlock_token_${resultId}`);
+}
+
+export function saveResultPdfToken(resultId: string, token: string): void {
+  safeSetItem(`temperament_unlock_token_${resultId}`, token);
 }
 
 export function saveQuizProgress(state: QuizProgressState): void {

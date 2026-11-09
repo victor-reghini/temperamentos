@@ -14,7 +14,7 @@ import {
   isResultPdfUnlocked,
   isStripeConfigured,
   isSupabaseConfigured,
-  unlockResultPdf,
+  saveResultPdfToken,
 } from '../lib/storage';
 import { encodeResultToBase64 } from '../lib/validation';
 import { useSeo } from '../lib/useSeo';
@@ -108,17 +108,76 @@ export function ResultsPage() {
 
   useEffect(() => {
     if (!result) return;
-    const searchParams = new URLSearchParams(location.search);
-    const hasUnlockedParam =
-      searchParams.get('unlocked') === '1' ||
-      location.hash.includes('unlocked=1') ||
-      window.location.href.includes('unlocked=1');
+    let active = true;
 
-    if (hasUnlockedParam || isResultPdfUnlocked(result.id)) {
-      unlockResultPdf(result.id);
+    // 1. Se já possui token de desbloqueio armazenado localmente para este resultado
+    if (isResultPdfUnlocked(result.id)) {
       setIsUnlocked(true);
     }
-  }, [result, location.search, location.hash]);
+
+    const searchParams = new URLSearchParams(location.search);
+    const sessionId = searchParams.get('session_id');
+    const urlToken = searchParams.get('token');
+
+    // 2. Se retornou da Stripe com session_id, consulta o backend para autenticar na Stripe
+    if (sessionId) {
+      setCheckoutStatus('Autenticando confirmação de pagamento junto à Stripe...');
+      fetch('/api/verify-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sessionId, resultId: result.id }),
+      })
+        .then((res) => res.json())
+        .then((data: { unlocked?: boolean; token?: string; error?: string }) => {
+          if (!active) return;
+          if (data.unlocked && data.token) {
+            saveResultPdfToken(result.id, data.token);
+            setIsUnlocked(true);
+            setCheckoutStatus('✓ Pagamento autenticado na Stripe! Relatório em PDF liberado.');
+            try {
+              const cleanUrl = new URL(window.location.href);
+              cleanUrl.searchParams.delete('session_id');
+              cleanUrl.searchParams.delete('unlocked');
+              window.history.replaceState({}, '', cleanUrl.toString());
+            } catch {
+              // ignore
+            }
+          } else {
+            setCheckoutStatus(data.error || 'Pagamento não confirmado na Stripe.');
+          }
+        })
+        .catch(() => {
+          if (active) {
+            setCheckoutStatus('Erro de rede ao validar sessão da Stripe. Tente recarregar.');
+          }
+        });
+      return () => {
+        active = false;
+      };
+    }
+
+    // 3. Se veio um token assinado na URL (ex: link restaurado)
+    if (urlToken && !isResultPdfUnlocked(result.id)) {
+      fetch('/api/verify-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token: urlToken, resultId: result.id }),
+      })
+        .then((res) => res.json())
+        .then((data: { unlocked?: boolean; token?: string }) => {
+          if (!active) return;
+          if (data.unlocked && data.token) {
+            saveResultPdfToken(result.id, data.token);
+            setIsUnlocked(true);
+          }
+        })
+        .catch(() => {});
+    }
+
+    return () => {
+      active = false;
+    };
+  }, [result, location.search]);
 
   if (loading) {
     return (
@@ -231,7 +290,7 @@ export function ResultsPage() {
         return;
       }
       if (data.mode === 'demo') {
-        unlockResultPdf(result.id);
+        saveResultPdfToken(result.id, 'demo-token');
         setIsUnlocked(true);
         setCheckoutStatus('Modo Demonstração: relatório completo liberado gratuitamente.');
         return;

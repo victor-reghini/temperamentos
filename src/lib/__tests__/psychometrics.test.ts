@@ -11,6 +11,7 @@ import {
   encodeResultToBase64,
   LikertValueSchema,
 } from '../validation';
+import { isResultPdfUnlocked, unlockResultPdf } from '../storage';
 import { handler as resultsHandler } from '../../../netlify/functions/results';
 import { handler as checkoutHandler } from '../../../netlify/functions/create-checkout-session';
 import type { LikertValue } from '../../types/temperament';
@@ -131,5 +132,12 @@ describe('TemperamentAxes Psychometric Engine & Validation', () => {
     expect(coordsCol.quadrantName).toBe('Quadrante Colérico');
     expect(coordsCol.plotX).toBeLessThan(50); // Seco (Esquerda)
     expect(coordsCol.plotY).toBeLessThan(50); // Quente (Topo)
+  });
+
+  it('manages PDF unlock state persistently in localStorage', () => {
+    const testId = 'test-unlock-id-99';
+    expect(isResultPdfUnlocked(testId)).toBe(false);
+    unlockResultPdf(testId);
+    expect(isResultPdfUnlocked(testId)).toBe(true);
   });
 });

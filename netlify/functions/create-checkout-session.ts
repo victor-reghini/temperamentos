@@ -45,20 +45,32 @@ export async function handler(event: NetlifyEvent) {
       process.env.URL ||
       'http://localhost:5173';
 
-    const successUrl = body.returnUrl
-      ? `${body.returnUrl}${body.returnUrl.includes('?') ? '&' : '?'}unlocked=1`
-      : `${origin}/results?unlocked=1`;
-    const cancelUrl = body.returnUrl || `${origin}/results`;
+    let successUrl = `${origin}/results?unlocked=1`;
+    let cancelUrl = `${origin}/results`;
+
+    if (body.returnUrl) {
+      try {
+        const u = new URL(body.returnUrl);
+        u.searchParams.set('unlocked', '1');
+        successUrl = u.toString();
+        cancelUrl = body.returnUrl;
+      } catch {
+        successUrl = body.returnUrl.includes('?')
+          ? `${body.returnUrl}&unlocked=1`
+          : `${body.returnUrl}?unlocked=1`;
+        cancelUrl = body.returnUrl;
+      }
+    }
 
     const params = new URLSearchParams();
     params.append('mode', 'payment');
     params.append('success_url', successUrl);
     params.append('cancel_url', cancelUrl);
     params.append('line_items[0][price_data][currency]', 'brl');
-    params.append('line_items[0][price_data][unit_amount]', '2990'); // R$ 29,90
+    params.append('line_items[0][price_data][unit_amount]', '500'); // R$ 5,00
     params.append(
       'line_items[0][price_data][product_data][name]',
-      `Manual Neurofuncional Completo (${body.compositeName || 'TemperamentAxes'})`
+      `Relatório Executivo dos 4 Temperamentos em PDF (${body.compositeName || 'Resultado'})`
     );
     params.append('line_items[0][quantity]', '1');
     if (body.resultId) {

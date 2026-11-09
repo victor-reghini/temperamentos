@@ -11,8 +11,10 @@ import { TEMPERAMENT_META } from '../lib/psychometrics';
 import {
   fetchResultByIdOrHash,
   getLatestLocalResult,
+  isResultPdfUnlocked,
   isStripeConfigured,
   isSupabaseConfigured,
+  unlockResultPdf,
 } from '../lib/storage';
 import { encodeResultToBase64 } from '../lib/validation';
 import { useSeo } from '../lib/useSeo';
@@ -34,6 +36,8 @@ export function ResultsPage() {
   const [pdfError, setPdfError] = useState<string | null>(null);
   const [copiedLink, setCopiedLink] = useState<boolean>(false);
   const [checkoutStatus, setCheckoutStatus] = useState<string | null>(null);
+  const [isUnlocked, setIsUnlocked] = useState<boolean>(false);
+  const [isRedirectingToCheckout, setIsRedirectingToCheckout] = useState<boolean>(false);
 
   const stripeLive = isStripeConfigured();
 
@@ -101,6 +105,20 @@ export function ResultsPage() {
       active = false;
     };
   }, [result, canvasFormat]);
+
+  useEffect(() => {
+    if (!result) return;
+    const searchParams = new URLSearchParams(location.search);
+    const hasUnlockedParam =
+      searchParams.get('unlocked') === '1' ||
+      location.hash.includes('unlocked=1') ||
+      window.location.href.includes('unlocked=1');
+
+    if (hasUnlockedParam || isResultPdfUnlocked(result.id)) {
+      unlockResultPdf(result.id);
+      setIsUnlocked(true);
+    }
+  }, [result, location.search, location.hash]);
 
   if (loading) {
     return (
@@ -190,7 +208,8 @@ export function ResultsPage() {
   };
 
   const handleStripeCheckout = async () => {
-    setCheckoutStatus('Conectando ao gateway de pagamento...');
+    setIsRedirectingToCheckout(true);
+    setCheckoutStatus('Conectando ao gateway de pagamento Stripe...');
     try {
       const res = await fetch('/api/create-checkout-session', {
         method: 'POST',
@@ -201,16 +220,31 @@ export function ResultsPage() {
           returnUrl: window.location.href,
         }),
       });
-      const data = (await res.json()) as { mode?: string; url?: string; message?: string };
+      const data = (await res.json()) as {
+        mode?: string;
+        url?: string;
+        message?: string;
+        error?: string;
+      };
       if (data.mode === 'live' && data.url) {
         window.location.href = data.url;
         return;
       }
+      if (data.mode === 'demo') {
+        unlockResultPdf(result.id);
+        setIsUnlocked(true);
+        setCheckoutStatus('Modo Demonstração: relatório completo liberado gratuitamente.');
+        return;
+      }
+      if (data.error) {
+        setCheckoutStatus(`Erro ao iniciar checkout: ${data.error}`);
+      }
+    } catch (err) {
       setCheckoutStatus(
-        data.message || 'Modo de Demonstração ativo: relatório completo liberado gratuitamente.'
+        err instanceof Error ? err.message : 'Falha na conexão com o gateway de pagamento.'
       );
-    } catch {
-      setCheckoutStatus('Modo Offline ativo: relatório completo liberado em Modo de Demonstração.');
+    } finally {
+      setIsRedirectingToCheckout(false);
     }
   };
 
@@ -389,13 +423,17 @@ export function ResultsPage() {
             </p>
           </div>
 
-          {!stripeLive ? (
-            <span className="font-mono text-xs uppercase px-3 py-1.5 rounded-full bg-[#dcf2ec] dark:bg-[#253242] text-[#1b5247] dark:text-[#9fc0e5] border border-[#a8dec5] dark:border-[#38526e] font-bold">
-              Modo de Demonstração (Acesso Liberado)
+          {isUnlocked ? (
+            <span className="font-mono text-xs uppercase px-3 py-1.5 rounded-full bg-[#dcf2ec] dark:bg-[#1f2b26] text-[#1b5247] dark:text-[#a3e2cf] border border-[#a8dec5] dark:border-[#2f5546] font-bold">
+              ✓ PDF Liberado
+            </span>
+          ) : stripeLive ? (
+            <span className="font-mono text-xs uppercase px-3 py-1.5 rounded-full bg-[#efeee6] dark:bg-[#1e1e1e] text-[#2c3038] dark:text-[#d4d4d4] border border-[#d5d3c8] dark:border-[#2d2d2d] font-bold">
+              Exportação em PDF • R$ 5,00
             </span>
           ) : (
-            <span className="font-mono text-xs uppercase px-3 py-1.5 rounded-full bg-[#78c6b5] text-[#0e241f] dark:bg-[#3d5f83] dark:text-[#ffffff] font-bold">
-              Stripe Checkout Ativo
+            <span className="font-mono text-xs uppercase px-3 py-1.5 rounded-full bg-[#dcf2ec] dark:bg-[#253242] text-[#1b5247] dark:text-[#9fc0e5] border border-[#a8dec5] dark:border-[#38526e] font-bold">
+              Modo de Demonstração (Acesso Liberado)
             </span>
           )}
         </div>
@@ -466,25 +504,33 @@ export function ResultsPage() {
 
         <div className="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-[#e2e0d6] dark:border-[#2d2d2d]">
           <div className="flex flex-wrap items-center gap-3">
-            <button
-              type="button"
-              disabled={isGeneratingPdf}
-              onClick={handleDownloadPdf}
-              className="min-h-[46px] px-5 py-2.5 rounded-xl bg-[#78c6b5] hover:bg-[#68b8a7] text-[#0e241f] dark:bg-[#3d5f83] dark:hover:bg-[#4a729c] dark:text-[#ffffff] disabled:opacity-50 font-bold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#6a92be]"
-            >
-              {isGeneratingPdf
-                ? 'Renderizando Relatório em PDF...'
-                : 'Baixar Relatório Completo em PDF'}
-            </button>
-
-            {stripeLive && (
+            {isUnlocked || !stripeLive ? (
               <button
                 type="button"
-                onClick={handleStripeCheckout}
-                className="min-h-[46px] px-4 py-2.5 rounded-xl bg-[#eae8de] dark:bg-[#1e1e1e] hover:bg-[#dedcd0] dark:hover:bg-[#282828] text-[#18191b] dark:text-[#d4d4d4] border border-[#c8c6ba] dark:border-[#333333] font-semibold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#4a729c]"
+                disabled={isGeneratingPdf}
+                onClick={handleDownloadPdf}
+                className="min-h-[46px] px-5 py-2.5 rounded-xl bg-[#78c6b5] hover:bg-[#68b8a7] text-[#0e241f] dark:bg-[#3d5f83] dark:hover:bg-[#4a729c] dark:text-[#ffffff] disabled:opacity-50 font-bold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#6a92be]"
               >
-                Adquirir Versão Premium via Stripe
+                {isGeneratingPdf
+                  ? 'Renderizando Relatório em PDF...'
+                  : 'Baixar Relatório Completo em PDF'}
               </button>
+            ) : (
+              <div className="flex flex-wrap items-center gap-3">
+                <button
+                  type="button"
+                  disabled={isRedirectingToCheckout}
+                  onClick={handleStripeCheckout}
+                  className="min-h-[46px] px-5 py-2.5 rounded-xl bg-[#28473b] hover:bg-[#1f372e] text-white dark:bg-[#3d5f83] dark:hover:bg-[#4a729c] disabled:opacity-50 font-bold text-sm transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2d7365] dark:focus-visible:outline-[#6a92be] shadow-sm flex items-center gap-2"
+                >
+                  {isRedirectingToCheckout
+                    ? 'Conectando ao Stripe...'
+                    : 'Baixar Relatório em PDF • R$ 5,00'}
+                </button>
+                <span className="text-xs text-[#5c5e64] dark:text-[#969696]">
+                  Pagamento único via Pix ou Cartão. Download imediato.
+                </span>
+              </div>
             )}
           </div>
 

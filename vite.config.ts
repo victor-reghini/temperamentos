@@ -1,13 +1,19 @@
-import { defineConfig, type Plugin } from 'vite';
+import { defineConfig, loadEnv, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // Local dev middleware for /api/* routes so Phase 1/2/3 endpoints work in `npm run dev` without Netlify CLI
-function localApiMiddleware(): Plugin {
+function localApiMiddleware(env: Record<string, string>): Plugin {
   return {
     name: 'local-api-middleware',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         if (!req.url?.startsWith('/api/')) return next();
+
+        // Always refresh server-side env vars from .env during local SSR function invocations
+        const currentEnv = loadEnv('development', process.cwd(), '');
+        for (const [k, v] of Object.entries(currentEnv)) {
+          process.env[k] = v;
+        }
 
         const chunks: Buffer[] = [];
         req.on('data', (chunk) => chunks.push(Buffer.from(chunk)));
@@ -54,8 +60,11 @@ function localApiMiddleware(): Plugin {
   };
 }
 
-export default defineConfig({
-  plugins: [react(), localApiMiddleware()],
-  envPrefix: ['VITE_', 'NEXT_PUBLIC_'],
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
+  return {
+    plugins: [react(), localApiMiddleware(env)],
+    envPrefix: ['VITE_', 'NEXT_PUBLIC_'],
+  };
 });
 

@@ -7,6 +7,42 @@ const STORAGE_KEYS = {
   PROGRESS: 'temperament_axes_quiz_progress_v1',
 };
 
+const memoryStore = new Map<string, string>();
+
+function safeGetItem(key: string): string | null {
+  try {
+    if (typeof localStorage !== 'undefined' && typeof localStorage.getItem === 'function') {
+      const val = localStorage.getItem(key);
+      if (val !== null) return val;
+    }
+  } catch {
+    // fallback
+  }
+  return memoryStore.get(key) ?? null;
+}
+
+function safeSetItem(key: string, value: string): void {
+  try {
+    if (typeof localStorage !== 'undefined' && typeof localStorage.setItem === 'function') {
+      localStorage.setItem(key, value);
+    }
+  } catch {
+    // fallback
+  }
+  memoryStore.set(key, value);
+}
+
+function safeRemoveItem(key: string): void {
+  try {
+    if (typeof localStorage !== 'undefined' && typeof localStorage.removeItem === 'function') {
+      localStorage.removeItem(key);
+    }
+  } catch {
+    // fallback
+  }
+  memoryStore.delete(key);
+}
+
 export interface QuizProgressState {
   modality: QuizModality;
   currentIndex: number;
@@ -28,18 +64,22 @@ export function isStripeConfigured(): boolean {
   );
 }
 
+export function isResultPdfUnlocked(resultId: string): boolean {
+  return safeGetItem(`temperament_unlocked_${resultId}`) === 'true';
+}
+
+export function unlockResultPdf(resultId: string): void {
+  safeSetItem(`temperament_unlocked_${resultId}`, 'true');
+}
+
 export function saveQuizProgress(state: QuizProgressState): void {
-  try {
-    localStorage.setItem(STORAGE_KEYS.PROGRESS, JSON.stringify(state));
-  } catch {
-    // Ignora erro de quota em modo privado
-  }
+  safeSetItem(STORAGE_KEYS.PROGRESS, JSON.stringify(state));
 }
 
 export function loadQuizProgress(): QuizProgressState | null {
+  const raw = safeGetItem(STORAGE_KEYS.PROGRESS);
+  if (!raw) return null;
   try {
-    const raw = localStorage.getItem(STORAGE_KEYS.PROGRESS);
-    if (!raw) return null;
     return JSON.parse(raw) as QuizProgressState;
   } catch {
     return null;
@@ -47,47 +87,39 @@ export function loadQuizProgress(): QuizProgressState | null {
 }
 
 export function clearQuizProgress(): void {
-  try {
-    localStorage.removeItem(STORAGE_KEYS.PROGRESS);
-  } catch {
-    // Ignora
-  }
+  safeRemoveItem(STORAGE_KEYS.PROGRESS);
 }
 
 export function saveResultLocally(result: TemperamentResult): void {
-  try {
-    localStorage.setItem(STORAGE_KEYS.LATEST_RESULT, JSON.stringify(result));
-    const mapRaw = localStorage.getItem(STORAGE_KEYS.RESULTS_BY_ID);
-    const map: Record<string, TemperamentResult> = mapRaw ? JSON.parse(mapRaw) : {};
-    map[result.id] = result;
-    localStorage.setItem(STORAGE_KEYS.RESULTS_BY_ID, JSON.stringify(map));
-  } catch {
-    // Ignora
-  }
+  safeSetItem(STORAGE_KEYS.LATEST_RESULT, JSON.stringify(result));
+  const mapRaw = safeGetItem(STORAGE_KEYS.RESULTS_BY_ID);
+  const map: Record<string, TemperamentResult> = mapRaw ? JSON.parse(mapRaw) : {};
+  map[result.id] = result;
+  safeSetItem(STORAGE_KEYS.RESULTS_BY_ID, JSON.stringify(map));
 }
 
 export function getLocalResultById(id: string): TemperamentResult | null {
-  try {
-    const mapRaw = localStorage.getItem(STORAGE_KEYS.RESULTS_BY_ID);
-    if (mapRaw) {
+  const mapRaw = safeGetItem(STORAGE_KEYS.RESULTS_BY_ID);
+  if (mapRaw) {
+    try {
       const map = JSON.parse(mapRaw) as Record<string, unknown>;
       if (map[id]) {
         const parsed = TemperamentResultSchema.safeParse(map[id]);
         if (parsed.success) return parsed.data as TemperamentResult;
       }
+    } catch {
+      // Ignora
     }
-    const latest = getLatestLocalResult();
-    if (latest && latest.id === id) return latest;
-    return null;
-  } catch {
-    return null;
   }
+  const latest = getLatestLocalResult();
+  if (latest && latest.id === id) return latest;
+  return null;
 }
 
 export function getLatestLocalResult(): TemperamentResult | null {
+  const raw = safeGetItem(STORAGE_KEYS.LATEST_RESULT);
+  if (!raw) return null;
   try {
-    const raw = localStorage.getItem(STORAGE_KEYS.LATEST_RESULT);
-    if (!raw) return null;
     const parsed = TemperamentResultSchema.safeParse(JSON.parse(raw));
     return parsed.success ? (parsed.data as TemperamentResult) : null;
   } catch {
